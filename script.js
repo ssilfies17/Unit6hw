@@ -1,6 +1,23 @@
 console.log("hello");
 
-var header = document.querySelector('header');
+function getApi() {
+    var requestUrl = 'https://api.openweathermap.org/data/2.5/weather?q=seattle&appid=bf2aa965b83be96842d2dc9c58880f7c';
+  
+    fetch(requestUrl) 
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        console.log(data); 
+    })
 
-header.setAttribute("style", "font-size:20px; margin:10px; padding-top:5px; display:flex; justify-content:center; background-color:#DFFF00; color:grey;")
+    var weatherblock = document.createElement('p')
+
+    weatherblock.append(requestUrl);
+    
+}
+
+
+
+getApi();
 
