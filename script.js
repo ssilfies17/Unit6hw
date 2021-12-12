@@ -9,12 +9,23 @@ function getApi() {
       })
       .then(function (data) {
         console.log(data); 
-    })
+        
+        var cityDetails= [data.main.temp, data.wind.speed, data.main.humidity,];
+        var cardHeader = document.querySelector(".card-header");
+        var cityTemp = document.querySelector("#temp");
+        var cityWind = document.querySelector("#windSpeed");
+        var cityHumidity = document.querySelector("#humidity");
+        var cityUV = document.querySelector("#uvIndex");
+      
+        console.log(cityDetails);
 
-    var weatherblock = document.createElement('p')
-
-    weatherblock.append(requestUrl);
-    
+        cardHeader.append(data.name);
+        cityTemp.append("   "+ cityDetails[0]);
+        cityWind.append("   " + cityDetails[1]);
+        cityHumidity.append("   " + cityDetails[2]);
+        cityUV.append("   " + cityDetails[3]);
+        
+    })   
 }
 
 
