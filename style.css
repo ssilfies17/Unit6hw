@@ -4,8 +4,8 @@
     padding-top:5px;
     padding-bottom:5px; 
     display:flex; justify-content:center; 
-    background-color:#DFFF00; 
-    color:grey;
+    background-color:#212227; 
+    color:white;
     font-weight: bolder;
 }
 .card-container {
@@ -15,13 +15,14 @@
 
 .card {
     margin:15px;
-    width:90rem; 
+    width: 85rem;
     height:20rem;
 }
 
 .card-header {
     font-size:34px;
     text-align:center;
+    background-color: #0582CA;
 }
 
 .cityDetails {
@@ -58,6 +59,9 @@
     height:2.25rem;
     margin-top:15px;
     border-radius: 4px;
+    background-color: grey;
+    color:white;
+
 }
 
 #preborder {
@@ -126,4 +130,62 @@
     margin-top:10px;
     margin-bottom:10px;
     height:40px;
+}
+
+.fiveday {
+    display:flex;
+    height:fit-content;
+    width:85rem;
+    margin:15px;
+    position:relative;
+    left:32rem;
+    top:-22rem;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.fiveday ul li {
+    margin:18px;
+    list-style:none;
+}
+
+#day1 {
+    display:flex;
+    height: fit-content;
+    margin:25px;
+    border: black solid 1px;
+}
+
+
+#day2 {
+    display:flex;
+    height: fit-content;
+    margin:25px;
+    border: black solid 1px;
+}
+
+#day3 {
+    display:flex;
+    height: fit-content;
+    margin:25px;
+    border: black solid 1px;
+}
+
+#day4 {
+    display:flex;
+    height: fit-content;
+    margin:25px;
+    border: black solid 1px;
+}
+
+#day5 {
+    display:flex;
+    height: fit-content;
+    margin:25px;
+    border: black solid 1px;
+}
+
+.date {
+    background-color: #003554;
+    color:white;
 }
